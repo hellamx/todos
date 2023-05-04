@@ -1,6 +1,8 @@
 # Стек
 
     - PHP 8.1, Laravel 10, MySQL 5.7
+    - jQuery 3.6.4, typeahead.js
+    - Bootstrap 5.3
     - spatie/laravel-sluggable
     - Intervention/image
 
