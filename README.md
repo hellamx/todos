@@ -5,6 +5,7 @@
     - Bootstrap 5.3
     - spatie/laravel-sluggable
     - Intervention/image
+    - barryvdh/laravel-debugbar
 
 # Деплой 
 
