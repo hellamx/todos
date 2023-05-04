@@ -1,0 +1,220 @@
+/* Общие стили */
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    background: #5B569A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+* {
+    color: #5B569A;
+}
+
+header a span {
+    font-weight: 700;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table tbody tr th, table tbody tr td {
+    vertical-align: middle;
+}
+
+
+/* Кнопки и ссылки навигации */
+
+.btn-user {
+    background: #5B569A;
+    border: 0;
+}
+
+.btn-user:hover {
+    transition: all .2s ease-out;
+    background: #423e77;
+}
+
+.user-modal-close, .btn-user-logout {
+    color: #fff;
+    background: #9895c0;
+}
+
+.user-modal-submit, .item-search-btn {
+    color: #fff;
+    background: #5B569A;
+}
+
+.user-modal-close:hover, .user-modal-submit:hover, .item-search-btn:hover {
+    transition: all .2s ease-out;
+    background: #423e77;
+    color: #fff;
+}
+
+.item-search-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-search {
+    border: 1px solid #5B569A;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.user-list-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #5B569A;
+    display: inline-block;
+}
+
+.user-list-link::after {
+    margin-top: 2px;
+    display: block;
+    content: '';
+    transform: scale(0);
+    border-bottom: 2px solid #5B569A;
+}
+
+.user-list-link:hover::after {
+    transform: scale(1);
+    transition: all .2s ease-out;
+}
+
+/* Переопределение стиля input:focus */
+
+.form-control:focus {
+    border-color: #5B569A;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(91, 86, 154, 0.2);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(91, 86, 154, 0.2);
+    box-shadow: 0px 4px 8px 0px rgba(91, 86, 154, 0.2);
+    transition: all .2s ease-out;
+}
+
+/* Шапка */
+
+.modal-header {
+    background: #5B569A;
+    color: #fff;
+}
+
+/* Стили ошибок */
+
+.modal-error {
+    color: #ED2B2A;
+    font-weight: 700;
+}
+
+.modal-success {
+    color: #05af77;
+    font-weight: 700;
+}
+
+/* Стили dashboard и таблиц */
+
+.header-lists {
+    background: #5B569A;
+    color: #fff;
+}
+
+.header-lists-history {
+    background: #9895c0;
+    color: #fff;
+}
+
+table thead {
+    background: #9895c0;
+}
+
+table thead th {
+    color: #fff;
+}
+
+.twitter-typeahead {
+    display: block !important;
+}
+
+.tt-menu {
+    width: 100%;
+    cursor: pointer;
+    background: #212529;
+}
+
+.tt-suggestion {
+    padding: 7px 15px;
+    color: #fff;
+}
+
+.tt-suggestion strong {
+    color: #fff;
+}
+
+.tt-suggestion:hover {
+    transition: all .2s ease-out;
+    background: #2f3338;
+    color: #fff;
+}
+
+.tag-checkbox {
+    background: #9895c0;
+    border: 0;
+    color: #fff;
+}
+
+.tag-checkbox:hover {
+    color: #fff;
+    background: #5B569A;
+}
+
+.tag-checkbox-active {
+    background: #5B569A;
+}
+
+/* Прелоадер */
+
+.main-container {
+    position: relative !important;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.loader-item {
+    position: relative;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #dddddd;
+    opacity: 0.4;
+    z-index: 99;
+}
